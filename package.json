@@ -1,0 +1,27 @@
+{
+  "name": "studion",
+  "version": "0.0.1",
+  "description": "Estudando Programção Web",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogeriomarcone/studion.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Rogerio Marcone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogeriomarcone/studion/issues"
+  },
+  "homepage": "https://github.com/rogeriomarcone/studion#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
