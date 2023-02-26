@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #ffc500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding-top: 7.75rem; /* usando em combinação .navbar { height: 7.75rem; } para tirar (empurrar) o condeudo debaixo da .navbar*/
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.navbar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    
+    top: 0;
+    left: 0;
+    
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 1rem;
+    
+    background-color: #000;
+    /* vermelho / verde /  azul / transparênte - 0 - F */
+    color: #fff;
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links li {
+    font-size: 0.875rem;
+    margin-right: 3rem;
+    /* rem pega o tamanho da fonte definido no root da pagina, por padrão nos navegadores o tamanho da fonte é 16px ### para por o tamanho equivalente em px para rem divide o valor em px desejada por o valor do rem ex: px/rem_padrao 10/16 = */
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.logo-studion {
+    font-weight: 900; /* peso da fonte */
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 2.375rem;
+    line-height: 1ch; /* relativo ao tamanho da alturar do glifo 0 da fonte */
+}
+
+.logo-studion__subtitle {
+    font-size: .875rem;
+    font-weight: 300;
+   /* float: right; *//* o texto não alinhou a direita com o "text-align: right;" */
+}
+
+.copy--primary{
+    color: var(--color-primary);
+}
